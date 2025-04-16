@@ -1,0 +1,122 @@
+/* General Styles */
+.allh1 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    /* color: blue; */
+  }
+  
+  .corouselp {
+    color: #35d0f0;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+  
+  .custom-card {
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+    height: 450px;
+  }
+  
+  .custom-card-img {
+    border-radius: 20px;
+    padding: 15px;
+    height: 190px;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .custom-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .card-body {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .carousel-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  button.active {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  /* Mobile Devices (up to 600px) */
+  @media (max-width: 600px) {
+    .custom-card {
+      width: 48%;
+      margin: 5px;
+      height: 300px;
+    }
+    .allh1{
+        font-size: 21px;
+        font-weight: 600;
+    }
+  
+    .custom-card-img {
+      height: 150px;
+    }
+  
+    .card-body {
+      padding: 10px;
+    }
+  
+    .carousel-inner {
+      flex-wrap: nowrap;
+    }
+    .card-text{
+      font-size: 12px;
+    }
+  
+    .carousel-item {
+      flex: 0 0 100%;
+      justify-content: space-around;
+    }
+  }
+  
+  /* Tablets (601px to 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .custom-card {
+      width: 32%;
+      margin: 8px;
+      height: 340px;
+    }
+  
+    .custom-card-img {
+      height: 170px;
+    }
+  }
+  
+  /* Large Screens (Above 1024px) */
+  @media (min-width: 1025px) {
+    .custom-card {
+      width: 18%;
+      margin: 10px;
+      height: 450px;
+    }
+  
+    .custom-card-img {
+      height: 200px;
+    }
+  }  

@@ -1,0 +1,136 @@
+/* Container to hold all sections */
+.shipment-billing-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for each section with border */
+.section12 {
+  border: 2px solid #ddd; /* Light grey border */
+  padding: 20px; /* Space inside the border */
+  margin-bottom: 20px; /* Space below each section */
+  border-radius: 8px; /* Rounded corners */
+   /* Light background color */
+}
+
+.section12 h2 {
+  font-size: 1.5rem;
+  color: #FA8E4C;
+  margin-bottom: 10px;
+}
+
+.section12 p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section12 ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.section12 ul li {
+  margin-bottom: 10px;
+}
+
+.section12 strong {
+  font-weight: bold;
+}
+
+/* Media Query for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+  .shipment-billing-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .section12 {
+    padding: 15px;
+  }
+
+  .section12 h2 {
+    font-size: 1.2rem; /* Smaller font size for headings */
+  }
+
+  .section12 p, .section12 ul {
+    font-size: 0.9rem; /* Smaller font size for paragraph and list */
+  }
+
+  .section12 ul {
+    margin-left: 15px;
+  }
+
+  .section12 ul li {
+    margin-bottom: 8px;
+  }
+
+  .shipment-billing-container h2 {
+    font-size: 1.5rem; /* Adjusting the main title font size */
+    
+  }
+}
+
+/* Media Query for Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+  .shipment-billing-container {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .section12 {
+    padding: 12px;
+  }
+
+  .section12 h2 {
+    font-size: 1.1rem; /* Even smaller font size for mobile screens */
+  }
+
+  .section12 p, .section12 ul {
+    font-size: 0.85rem; /* Smaller font for better readability on smaller screens */
+  }
+
+  .section12 ul {
+    margin-left: 10px;
+  }
+
+  .section12 ul li {
+    margin-bottom: 6px;
+  }
+
+  .shipment-billing-container h2 {
+    font-size: 1.3rem; /* Smaller main title font size */
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .shipment-billing-container {
+    width: 85%; /* Slightly increased width for tablets */
+    padding: 15px;
+  }
+
+  .section12 {
+    padding: 18px; /* Reduce padding to give more space */
+  }
+
+  .section12 h2 {
+    font-size: 1.3rem; /* Slightly smaller font for subheadings */
+  }
+
+  .section12 p, .section12 ul {
+    font-size: 0.95rem; /* Slightly smaller font for better readability */
+  }
+
+  .section12 ul {
+    margin-left: 18px;
+  }
+
+  .section12 ul li {
+    margin-bottom: 8px;
+  }
+
+  .shipment-billing-container h2 {
+    font-size: 1.4rem; /* Slightly smaller main title font size */
+  }
+}
+
+

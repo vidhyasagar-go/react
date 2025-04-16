@@ -1,0 +1,138 @@
+/* General Styling */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default for desktop: 4 columns */
+  gap: 20px;
+  margin: 0 auto;
+  padding: 0 10px; /* Padding to avoid edge overflow */
+}
+
+/* Package Styling */
+.package {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.package:hover {
+  background-color: blue ;
+  color: #ffff; /* Text color changes to blue */
+  transform: scale(1.05); /* Expand the card slightly */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for hover effect */
+}
+.package-description, .package-details, .package-title{
+  color: rgb(0, 0, 0);
+}
+/* Title and Description Color Change on Hover */
+.package:hover .package-title,
+.package:hover .package-description,
+.package:hover .package-details ,
+.package:hover .price {
+  color: rgb(255, 255, 255); /* Change text color to blue on hover */
+}
+
+/* Icon Styling */
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  filter: saturate(2); /* Increase saturation (1.5 is just an example, you can adjust) */
+  border-radius: 10px;
+}
+
+/* Package Title */
+.package-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth transition for title color */
+}
+
+/* Package Description */
+.package-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: color 0.3s ease; /* Smooth transition for description color */
+}
+
+/* Package Details */
+.package-details {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Price */
+.price {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Enroll Button */
+.enroll-button {
+  background-color: #007b5e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Added transition for transform */
+}
+
+.enroll-button:hover {
+  background-color: #FF914D;
+  transform: scale(1.05);
+}
+
+/* Mobile View - One Card per Row */
+@media (max-width: 480px) {
+  .service-list {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .package {
+    width: 80%; /* Ensure it takes the full width */
+    margin-bottom: 20px;
+    margin: auto;
+  }
+}
+
+/* Tablet View - Two Cards per Row */
+@media (min-width: 481px) and (max-width: 768px) {
+  .service-list {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  }
+
+  .package {
+    margin-bottom: 20px;
+  }
+  .container p{
+    font-size: 11px;
+    /* border: 1px solid; */
+  }
+}
+
+/* Desktop View - Four Cards per Row (>= 1115px) */
+@media (min-width: 1115px) {
+  .service-list {
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+  }
+}
+
+/* For Screens between 769px and 1114px - Three Cards in First Row and Fourth Card in Second Row */
+@media (min-width: 769px) and (max-width: 1115px) {
+  .service-list {
+    grid-template-columns: repeat(3, 1fr); /* Three cards in the first row */
+  }
+
+  /* Ensure the fourth card stays in the second row */
+  .service-list .package:nth-child(4) {
+    grid-column: span 1; /* Same size for all cards */
+  }
+}

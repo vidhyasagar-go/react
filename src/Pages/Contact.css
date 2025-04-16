@@ -1,0 +1,139 @@
+.contact-us-container {
+  padding: 40px;
+  /* background-color: #f9f9f9; */
+}
+
+.react-out-heading {
+  font-size: 2rem; /* Set heading color to black */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.location-cards {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between;
+}
+
+.location-card {
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px ;
+  flex: 1;
+  margin: 20px 0;
+}
+
+.location-card h3 {
+  font-size: 1.2rem;
+   /* Set heading color to black */
+}
+
+.location-card p {
+  font-size: 1rem;
+   /* Set text color to black for location addresses */
+}
+
+.contact-card {
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px;
+  margin: 20px 0;
+  text-align: center; /* Center the contact details */
+  width: 48.5%;
+  margin: auto;
+  align-items: center;
+}
+
+.contact-card h3 {
+  font-size: 1.2rem;
+   /* Set heading color to black */
+}
+
+.contact-card p {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Vertically center the content */
+  font-size: 1rem;
+  margin: 10px 0;
+  justify-content: center; /* Center the content horizontally */
+}
+
+.contact-icon {
+  margin-right: 10px; /* Add some spacing between the icon and text */
+   /* Ensure icons are black */
+}
+
+.contact-detail {
+  cursor: pointer;
+   /* Set text color to black for contact details */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Ensure the text size is consistent */
+}
+
+.contact-detail:hover {
+  color: #007bff; /* Add hover effect color */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .react-out-heading {
+      font-size: 1.8rem; /* Slightly smaller font for tablets */
+  }
+
+  .intro-text {
+      font-size: 0.95rem; /* Smaller text for intro on tablets */
+  }
+
+  .location-cards {
+      flex-direction: column; /* Stack location cards vertically */
+      gap: 20px; /* Smaller gap between cards */
+  }
+
+  .location-card {
+      min-width: 100%; /* Full width on smaller screens */
+      margin: 10px 0;
+  }
+
+  .contact-card {
+      min-width: 100%; /* Full width on smaller screens */
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .react-out-heading {
+      font-size: 1.5rem; /* Smaller font for mobile */
+  }
+
+  .intro-text {
+      font-size: 0.9rem; /* Even smaller text for mobile */
+  }
+
+  .location-card p {
+      font-size: 0.9rem; /* Slightly smaller location address text */
+  }
+
+  .contact-card p {
+      font-size: 0.9rem; /* Slightly smaller contact details text */
+  }
+}

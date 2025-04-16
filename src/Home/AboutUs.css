@@ -1,0 +1,156 @@
+/* General Styles */
+#about {
+    padding: 80px 0;
+
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+    justify-content: space-between;
+  }
+  
+  .about-col-1 {
+    width: 50%; /* Adjust width for desktop */
+    margin-bottom: 20px; /* Add space below the image for mobile */
+  }
+  
+  .mm {
+    width: 100%; /* Full width of the container */
+    height: 450px; /* Maintain aspect ratio */
+    border-radius: 15px;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+    justify-content: space-between;
+  }
+  
+  .aboutusright {
+    width: 50%; /* Adjust width for desktop */
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center-align text vertically */
+  }
+  
+  .aboutusright p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: block;
+    margin: 20px auto 0; /* Center the button */
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #22c55e !important;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none !important;
+  }
+  
+  /* Responsive Styles for Mobile Devices (up to 480px) */
+  @media (max-width: 480px) {
+    .about-section {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center-align content */
+    }
+  
+    .about-col-1 {
+      width: 100%; /* Full width for the image container */
+    }
+  
+    .aboutusright {
+      width: 100%; /* Full width for the text container */
+      margin-top: 20px; /* Add space above the text */
+      padding: 0 15px; /* Add padding for better alignment */
+    }
+  
+    .aboutusright p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  
+    .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+    
+    .about-col-1{
+      width: 90%;
+      margin-top: 0px;
+      
+    }
+    .about-col-2{
+      /* border: 1px solid; */
+      margin-bottom: 0px;
+      height: 70px;
+    }
+  }
+  
+  /* Tablet Devices (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .about-section {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center-align content */
+    }
+  
+    .about-col-1 {
+      width: 100%; /* Full width for the image container */
+    }
+  
+    .aboutusright {
+      width: 100%; /* Full width for the text container */
+      margin-top: 20px; /* Add space above the text */
+      padding: 0 20px; /* Add padding for better alignment */
+    }
+  
+    .aboutusright p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+  }
+  
+  /* Small Laptops (769px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .about-section {
+      flex-direction: column; /* Place image and text side by side */
+      align-items: center;
+    }
+  
+    .about-col-1 {
+      width: 80%; /* Reduce image container width */
+    }
+  
+    .aboutusright {
+      width: 80%; /* Adjust text container width */
+      padding-left: 0px; /* Add spacing between image and text */
+    }
+  
+    .aboutusright p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+  
+  /* Larger Devices (Above 1024px) */
+  @media (min-width: 1025px) {
+    .about-section {
+      flex-direction: row; /* Place image and text side by side */
+      align-items: center;
+    }
+  
+    .about-col-1 {
+      width: 45%; /* Reduce image container width */
+    }
+  
+    .aboutusright {
+      width: 50%; /* Adjust text container width */
+      padding-left: 40px; /* Add spacing between image and text */
+    }
+  }

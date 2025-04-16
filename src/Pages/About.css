@@ -1,0 +1,169 @@
+/* Common styles for both themes */
+
+/* Light theme styles */
+.light-theme {
+    background-color: #ffffff; /* White background for light theme */
+    color: #333333; /* Dark text color */
+  }
+  
+  .light-theme .aboutus-header {
+    background-color: #f9f9f9; /* Light grey background for the header */
+  }
+  
+  .light-theme .aboutus-text,
+  .light-theme section p {
+    color: #333; /* Dark text for light theme */
+  }
+  
+  /* Dark theme styles */
+  .dark-theme {
+    background-color: #333333; /* Dark background for dark theme */
+    color: #f4f4f4; /* Light text color */
+  }
+  
+  .dark-theme .aboutus-header {
+    background-color: #444444; /* Darker grey background for the header */
+  }
+  
+  .dark-theme .aboutus-text,
+  .dark-theme section p {
+    color: #f4f4f4; /* Light text for dark theme */
+  }
+  
+  /* About Us Section */
+  .aboutus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Ensure content is centered vertically */
+    min-height: 100vh;  /* Full viewport height */
+    padding: 20px;
+  }
+  
+  .aboutus-header {
+    text-align: center;
+    margin-bottom: 20px;
+    /* margin-top: 50px; */
+    /* padding: 20px; */
+  }
+  
+  .aboutus-header h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Image styling */
+  .aboutus-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    display: block;  /* Center image horizontally */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid;
+  }
+  
+  /* Center the text content */
+  .aboutus-text {
+    max-width: 1200px;
+    text-align: center;  /* Center the text */
+  }
+  
+  .aboutus-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: left;  /* Center-align the paragraph text */
+    margin: 0 auto 15px auto;
+    width: 86%;
+    /* border: 1px solid; */
+  }
+
+  
+  /* Section styling */
+  .section {
+    background: none; /* No background for sections */
+    max-width: 1200px; /* Increase width of sections */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 1s;
+    border: 1px solid;
+    border-radius: 10px;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  section h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  section > p {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0 auto 15px auto;
+    max-width: 1000px;
+  }
+  
+  /* Mobile and Tablet Responsiveness */
+  @media (max-width: 768px) {
+    .aboutus-header {
+      margin-top: 50px;
+    }
+  
+    .aboutus-image {
+      width: 90%;
+      height: auto;
+    }
+  
+    .aboutus-header h2 {
+      font-size: 1.8rem;
+    }
+  
+    section h3 {
+      font-size: 1.6rem;
+    }
+  
+    section p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .aboutus-header {
+      margin-top: 30px;
+    }
+  
+    .aboutus-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .aboutus-header h2 {
+      font-size: 1.6rem;
+    }
+  
+    section h3 {
+      font-size: 1.5rem;
+    }
+  
+    section p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,132 @@
+/* General Styles */
+.about-section {
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.map-container {
+  flex: 1;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: auto; /* Ensure the content aligns with the map container */
+  margin-right: auto; /* Ensure the content aligns with the map container */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.description {
+  line-height: 1.7;
+}
+
+.reach-button {
+  background-color: #22c55e !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.75rem 1.5rem !important;
+  transition: background-color 0.3s ease !important;
+  width: fit-content;
+}
+
+.reach-button:hover {
+  background-color: #16a34a !important;
+}
+
+.reach-button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media query for larger screens */
+@media (min-width: 1024px) {
+  .about-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .map-container,
+  .text-content {
+    width: 50%;
+  }
+}
+
+/* Mobile screen styles (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .map-frame {
+    width: 90%;
+    height: 50vh;
+    border: none;
+    border-radius: 0.5rem;
+    margin: auto;
+  }
+
+  .sub-title {
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .map-container {
+    width: 100%;
+    margin: 0 auto; /* Centers the map horizontally */
+  }
+
+  .text-content {
+    width: 90%; /* Ensures the content width is the same as the map */
+    margin: 2rem auto; /* Adds margin above and below the content */
+  }
+}
+
+/* Tablet screen styles (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .map-frame {
+    width: 90%;
+    height: 50vh;
+    border: none;
+    border-radius: 0.5rem;
+    margin: auto;
+  }
+
+  .sub-title {
+    font-size: 25px;
+  }
+
+  .map-container {
+    width: 100%;
+    margin: 0 auto; /* Centers the map horizontally */
+  }
+
+  .text-content {
+    width: 90%; /* Ensures the content width is the same as the map */
+    margin: 2rem auto; /* Adds margin above and below the content */
+  }
+}

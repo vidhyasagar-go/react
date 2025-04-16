@@ -1,0 +1,141 @@
+/* Container for the entire policy section */
+.policy-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Intro section with a light grey border */
+.intro-section {
+  border: 2px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+   /* Light background color */
+}
+
+.intro-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Style for each policy section */
+.policy-section {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  /* Light background color */
+}
+
+/* Policy section heading */
+.policy-heading {
+  font-size: 1.5rem;
+  color: #FA8E4C;
+  margin-bottom: 15px;
+}
+.lidiv{
+  display: flex;
+  align-items: start;
+  /* padding-top: 10px; */
+}
+.lidiv li{
+  padding-top: 8px;
+}
+
+/* Paragraph inside the policy section */
+.policy-paragraph {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Style for h3 tags */
+.policy-section> h3 {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  display: flex;
+  font-weight: bold;
+}
+
+/* Style for h3 tag after the previous one */
+.policy-section >h3 + p {
+  margin-top: 8px;
+}
+
+/* Media Query for Tablet View (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .policy-container {
+    width: 85%; /* Slightly increase width for better use of space on tablets */
+    padding: 20px;
+  }
+
+  .intro-section {
+    padding: 18px; /* Adjust padding for tablets */
+  }
+
+  .policy-section {
+    padding: 18px; /* Adjust padding for tablets */
+  }
+
+  .policy-heading {
+    font-size: 1.4rem; /* Slightly smaller font size for headings */
+  }
+
+  .policy-paragraph, h3 {
+    font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .policy-section>h3 {
+    margin-top: 12px;
+  }
+
+  .policy-section>h3 + p {
+    margin-top: 6px;
+  }
+}
+
+/* Media Query for Mobile View (max-width: 767px) */
+@media (max-width: 767px) {
+  .policy-container {
+    width: 95%; /* Almost full width for smaller mobile screens */
+    padding: 15px;
+  }
+
+  .intro-section {
+    padding: 15px;
+  }
+
+  .policy-section {
+    padding: 15px;
+  }
+
+  .policy-heading {
+    font-size: 1.3rem; /* Make heading font slightly smaller on mobile */
+  }
+
+  .policy-paragraph, h3 {
+    font-size: 0.95rem; /* Make text smaller for mobile view */
+  }
+
+  .policy-section>h3 {
+    font-size: 1rem; /* Adjust h3 size for better mobile readability */
+    margin-top: 10px;
+  }
+
+  .policy-section>h3 + p {
+    margin-top: 5px;
+  }
+
+  /* Ensuring that the content inside lists is well aligned */
+  .policy-section ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  /* Adjusting the size of the "support" email address */
+  .policy-section span {
+    font-size: 0.95rem;
+  }
+}
+
+

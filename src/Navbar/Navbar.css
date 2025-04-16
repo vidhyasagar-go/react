@@ -1,0 +1,195 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: #fff;
+    height: 70px;
+    position: sticky; /* Makes the navbar sticky */
+    top: 0; /* Ensures the navbar sticks to the top of the page */
+    z-index: 1000; /* Ensure navbar stays above other content */
+  }
+  
+  .navbar-left {
+    flex-grow: 1;
+  }
+  
+  .navbar-logo {
+    height: 80px; /* Set height to 80px */
+    object-fit: contain;
+  }
+
+  /* Navbar.css */
+
+/* Default styles for the theme icon */
+.themeicon {
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  display: inline-block;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+/* Rotation animation when the theme is toggled */
+.themeicon.rotate {
+  transform: rotate(360deg);
+  opacity: 0;
+}
+
+/* Opacity for the theme icon to smoothly show/hide */
+.themeicon.show {
+  opacity: 1;
+}
+
+  
+  /* Navbar links styling */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .navbar-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navbar-links a:hover {
+    /* text-decoration: underline; */
+    color: #35d0f0;
+  }
+  
+  .navbar-links .login-register-btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-links .login-register-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Theme toggle button styling */
+  .navbar-links i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid; */
+  }
+  
+  /* Hide hamburger icon on larger screens */
+  .navbar-right .bx-menu {
+    display: none;
+  }
+  
+  /* Dark Mode Styling */
+  body.dark {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  body.dark .navbar {
+    background-color: #000000;
+  }
+  
+  body.dark .navbar-links a {
+    color: #fff;
+  }
+  
+  body.dark .navbar-links a:hover {
+    color:  #35d0f0;
+  }
+  body.light .navbar-links a:hover {
+    color: #35d0f0;
+  }
+  
+  /* Mobile View (max-width: 768px) */
+  @media (max-width: 768px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .navbar-left {
+      margin-bottom: 10px;
+    }
+  
+    /* Navbar links styling on mobile */
+    .navbar-links {
+      flex-direction: column;
+      display: none;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      position: absolute; /* Position the menu above the rest of the navbar */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1; /* Make sure it appears above the navbar */
+      background-color: #fff; /* Set a background color for the menu */
+      border-top: 1px solid #ddd; /* Optional, adds a small border */
+    }
+  
+    .navbar-links.open {
+      display: flex; /* Show menu when open class is added */
+    }
+  
+    .navbar-links a {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .navbar-links .login-register-btn {
+      margin: 10px 0;
+    }
+  
+    .navbar-links i {
+      margin-top: 10px;
+    }
+  
+    /* Positioning for the hamburger icon in mobile view */
+    .navbar-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+    }
+  
+    /* Hamburger icon at the top right corner */
+    .navbar-right .bx-menu {
+      display: block;
+      font-size: 50px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 2; /* Ensure it's above the menu */
+    }
+  
+    /* Background color of the menu should match navbar background color */
+    body.dark .navbar-links {
+      background-color: #000000;
+    }
+  
+    body.light .navbar-links {
+      background-color: #fff;
+    }
+  
+    /* Move the login/register button and theme toggle inside the hamburger menu */
+    .navbar-links .login-register-btn,
+    .navbar-links i {
+      display: block;
+      width: 100%;
+    }
+  }  

@@ -1,0 +1,169 @@
+/* Container Styling */
+#fff {
+    margin-top: 80px;
+    text-align: center;
+  }
+  .dynamicp{
+    /* border: 1px solid; */
+    margin-bottom: 0px;
+  }
+  #ff .sub-title1 {
+    font-size: 45px;
+    font-weight: 600;
+    /* color: #FF914D; */
+    margin-bottom: 50px;
+    margin-top: 0;
+    /* border: 1px solid; */
+    padding: 0px 0px;
+  }
+  
+  #ff .pp {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Flex Container for Boxes */
+  #container-block {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Individual Box Styling */
+  .box {
+    width: 250px;
+    height: 300px;
+    align-items: center;
+    color: black;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .box img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease; /* Smooth image movement */
+  }
+  
+  .box h6 {
+    font-size: 18px;
+    margin-top: 24px;
+    transition: color 0.3s ease; /* Smooth text color change */
+  }
+  
+  .box p {
+    font-size: 15px;
+    margin-top: 10px;
+    /* color: rgba(0, 0, 0, 0.56); */
+    transition: color 0.3s ease; /* Smooth text color change */
+  }
+  
+  /* Hover Effect */
+  .box:hover {
+    background-color: blue; /* Change background to blue */
+    color: white; /* Change text color to white */
+  }
+  
+  .box:hover img {
+    transform: translateY(-10px); /* Move image slightly upward */
+  }
+  
+  .box:hover h6,
+  .box:hover p {
+    color: white; /* Change text color to white */
+  }
+  
+  /* Button Styling */
+  #button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+
+  /* Base Responsive Styles */
+
+/* Mobile Devices (up to 480px) */
+/* Mobile Devices (up to 480px) */
+@media (max-width: 760px) {
+  .dynamicp {
+    font-size: 15px;
+  }
+
+  .sub-title1 {
+    font-size: 21px !important;
+    font-weight: 600;
+  }
+
+  .pp {
+    font-size: 15px !important;
+  }
+
+  /* Adjust the container to display 2 boxes per row on mobile */
+  #container-block {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of boxes into new lines */
+    justify-content: space-between; /* Space between the items */
+  }
+
+  /* Make each box take up 50% of the container width */
+  .box {
+    width: 45%;  /* Each box takes 48% of the width, leaving a little gap */
+    margin-bottom: 20px; /* Space between the rows */
+    height: 250px; /* Fixed height for each box */
+    display: flex;
+    flex-direction: column; /* Ensure image and text are stacked vertically */
+    justify-content: space-between; /* Distribute space between image and text */
+  }
+
+  /* Ensure the images inside each box resize and cover the box without stretching */
+  .box img {
+    width: 80px;  /* Make the image fill the width of the box */
+    height: 80px; /* Adjust image height as needed */
+    object-fit: cover;  /* Ensure the image fits without stretching */
+  }
+
+  /* Adjust text inside each box */
+  .box h6 {
+    font-size: 14px;  /* Reduce title size for mobile */
+    margin-top: 10px; /* Add some space above the title */
+  }
+
+  .box p {
+    font-size: 12px; /* Reduce description text size */
+  }
+} 
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+/* Small Laptops (769px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #container-block {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+  
+}
+
+/* Larger Devices (Above 1024px) */
+@media (min-width: 1025px) {
+  
+}

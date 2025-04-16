@@ -1,0 +1,92 @@
+#header {
+    width: 100%;
+    height: 92vh;
+    background-image: url('../assets/desktop.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #uitext{
+    font-weight: 600;
+  }
+
+  /* Header Text Styling */
+.header-text {
+    text-align: left;
+    /* color: white; */
+    font-size: 2rem;
+    padding-top: 150px;
+    padding-left: 50px;
+    position: absolute;
+    top: 0;
+    color: white;
+  }
+  
+  .header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    padding-right: 70px;
+    text-align: left;
+    /* color: black; */
+  }
+  
+  .header-text p {
+    /* padding-right: 70px; */
+    color: #35D0F0;
+  }
+  
+  .header-text h1 span {
+    color: #FF914D;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #header {
+      width: 100% !important;
+      height: 88vh;
+      background-image: url('../assets/mobile.png'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .header-text h1 {
+      font-size: 30px;
+      padding-bottom: 250px;
+      /* color: black; */
+    }
+    #uitext{
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .header-text p {
+      /* padding-right: 70px; */
+      color: #35D0F0;
+      position: relative;
+      bottom: 260px;
+    }
+    
+    .header-text h1 span {
+      color: #FF914D;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  #header {
+    width: 100%;
+    height: 92vh;
+    background-image: url('../assets/mobile.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }}

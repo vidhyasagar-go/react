@@ -1,0 +1,66 @@
+/* Container to hold all section11s */
+.shipment-billing-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for each section11 with border */
+.section11 {
+  border: 2px solid #ddd; /* Light grey border */
+  padding: 20px; /* Space inside the border */
+  margin-bottom: 20px; /* Space below the section */
+  border-radius: 8px; /* Rounded corners */
+   /* Light background color */
+}
+
+.section11 h2 {
+  font-size: 1.5rem;
+  color: #FA8E4C;
+  margin-bottom: 10px;
+}
+
+.section11 p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Styles for Tablets (Min-width: 768px and Max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .shipment-billing-container {
+    width: 90%; /* Adjust container width for tablet screens */
+    padding: 15px;
+  }
+
+  .section11 h2 {
+    font-size: 1.4rem; /* Slightly smaller headers */
+  }
+
+  .section11 p {
+    font-size: 0.95rem; /* Adjust font size for better readability */
+  }
+}
+
+/* Responsive Styles for Mobile Devices (Max-width: 768px) */
+@media (max-width: 768px) {
+  .shipment-billing-container {
+    width: 100%; /* Full width for mobile */
+    padding: 10px;
+  }
+
+  .section11 h2 {
+    font-size: 1.2rem; /* Make headers smaller on mobile */
+  }
+
+  .section11 p {
+    font-size: 0.9rem; /* Smaller font for mobile screens */
+    line-height: 1.5; /* Adjust line height for mobile */
+  }
+
+  .shipment-billing-container h2 {
+    font-size: 1.5rem;
+    /* color: #35CFEF; */
+    /* Adjust spacing for mobile */
+  }
+}
+

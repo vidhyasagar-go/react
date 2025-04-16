@@ -1,0 +1,44 @@
+/* Templates.css */
+.template-links a {
+    text-decoration: none;  /* Remove default underline */
+    position: relative;  /* Required for positioning the underline */
+    transition: all 0.3s ease;  /* Add a smooth transition for underline */
+  }
+  
+  .template-links a.active {
+    color: #35d0f0;  /* Optional: Adjust active link color */
+  }
+  
+  .template-links a.active::after {
+    content: '';  /* Create a pseudo-element for the underline */
+    position: absolute;
+    bottom: -5px;  /* Adjust the space between text and underline */
+    left: 0;
+    width: 100%;
+    height: 2px;  /* Set the thickness of the underline */
+    background-color: #35d0f0;  /* Set the underline color */
+  }
+  .services-section-title{
+    /* border: 1px solid; */
+    margin-bottom: 0px;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    #temp1{
+        font-size: 11px;
+    }
+    .template-links {
+        /* border: 1px solid; */
+        /* width: fit-content; */
+        
+        /* Center the div horizontally and vertically */
+        display: flex;
+        justify-content: flex-start; /* Centers horizontally */
+        align-items: flex-start; /* Centers vertically */
+        
+        
+      }
+      
+
+}
